@@ -1,17 +1,5 @@
 {
     "/warnsign": {
         "target": "http://192.168.1.118:5555"
-    },
-    "/verify": {
-        "target": "http://172.18.6.201:5555"
-    },
-    "/shortverify": {
-        "target": "http://172.18.6.201:5555"
-    },
-    "/xmldata/**": {
-        "target": "http://172.18.6.201"
-    },
-    "/caslogin": {
-        "target": "http://172.18.6.201:5556"  
     }
 }

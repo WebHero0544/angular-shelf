@@ -1,3 +1,32 @@
-<p>
-  index works! {{index}}
+
+<br>
+<br>
+<br>
+<h3>测试CommonModule 和 FromModdule 是否引入</h3>
+<p *ngIf="true">
+  <input nz-input placeholder="Basic usage" [(ngModel)]="text">
 </p>
+
+<br>
+<br>
+<br>
+<h3>测试第三方模块NgZorroAntdModule是否引入</h3>
+<button nz-button nzType="primary" (click)="toggle()">Primary</button>
+<button nz-button nzType="default" (click)="toggle()">Default</button>
+<button nz-button nzType="dashed" (click)="toggle()">Dashed</button>
+<button nz-button nzType="danger" (click)="toggle()">Danger</button>
+
+
+<br>
+<br>
+<br>
+<h3>测试BrowserAnimationsModule是否引入</h3>
+<div style="background: #ccc;" [@expand]="status">
+  <ul>12312312312321</ul>
+  <ul>12312312312321</ul>
+  <ul>12312312312321</ul>
+  <ul>12312312312321</ul>
+  <ul>12312312312321</ul>
+  <ul>12312312312321</ul>
+  <ul>12312312312321</ul>
+</div>

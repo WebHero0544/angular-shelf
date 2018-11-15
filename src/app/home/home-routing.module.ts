@@ -12,8 +12,20 @@ const routes: Routes = [
         loadChildren: '../index/index.module#IndexModule'
       },
       {
-        path: 'warning',
-        loadChildren: '../warning/warning.module#WarningModule' //'../warning/warning.module#WarningModule'
+        path: 'weather-stat',
+        loadChildren: '../weather-stat/weather-stat.module#WeatherStatModule'
+      },
+      {
+        path: 'disaster',
+        loadChildren: '../disaster/disaster.module#DisasterModule'
+      },
+      {
+        path: 'rain-stat',
+        loadChildren: '../rain-stat/rain-stat.module#RainStatModule'
+      },
+      {
+        path: 'manage',
+        loadChildren: '../manage/manage.module#ManageModule'
       },
       { path: '', redirectTo: 'index', pathMatch: 'full' },
     ]
