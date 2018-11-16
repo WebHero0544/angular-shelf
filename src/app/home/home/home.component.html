@@ -1,1 +1,34 @@
-<router-outlet></router-outlet>
+<header class="header">
+    <div></div>
+    <div></div>
+    <div>
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="昌平气象数据统计分析平台" title="昌平气象数据统计分析平台">
+        </div>
+        <ul class="nav">
+            <li routerLink="/home/index" routerLinkActive="active">
+                <div class="img-box"></div>
+                <span>首页</span>
+            </li>
+            <li routerLink="/home/weather-stat" routerLinkActive="active">
+                <div class="img-box"></div>
+                <span>气候统计</span>
+            </li>
+            <li routerLink="/home/disaster" routerLinkActive="active">
+                <div class="img-box"></div>
+                <span>历史灾害</span>
+            </li>
+            <li routerLink="/home/rain-stat" routerLinkActive="active">
+                <div class="img-box"></div>
+                <span>雨量统计</span>
+            </li>
+            <li routerLink="/home/manage" routerLinkActive="active">
+                <div class="img-box"></div>
+                <span>阀值管理</span>
+            </li>
+        </ul>
+    </div>
+</header>
+<section class="content">
+    <router-outlet></router-outlet>
+</section>

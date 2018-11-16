@@ -16,24 +16,8 @@ export class IndexComponent implements OnInit {
     public baseService: BaseService
   ) { }
 
-  text = 'xxxx';
-
-  status = 'expand';
-
-
   ngOnInit() {
-    this.http.get('./index.html').subscribe(
-      data => {
-        console.log(data);
-      }
-    );
-    const xx = this.baseService.isNumber('xxx');
-    console.log(xx);
-  }
 
-
-  toggle() {
-    this.status = this.status === 'expand' ? 'noexpand' : 'expand';
   }
 
 }
