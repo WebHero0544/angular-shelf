@@ -217,6 +217,19 @@ export class BaseService {
     return result;
   }
 
+  // 得到二维数组
+	getDyadicArray (arr: any[], size: number) {
+		var length = arr.length;
+		var dArrLastIndex = Math.ceil(length / size) - 1;
+		var i = 0;
+		var dArr = [];
+		while(i <= dArrLastIndex) {
+			dArr.push(arr.slice(i * size, i * size + size));
+			i++;
+		}
+		return dArr;
+	}
+
 
   /**
    * 
