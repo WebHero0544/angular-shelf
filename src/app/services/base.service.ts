@@ -273,4 +273,30 @@ export class BaseService {
     });
     return result;
   }
+  
+  
+  /**
+   * 
+   * 二维数组扁平化
+   * 
+   * @param twoArr
+   */
+  pressArray(twoArr: any[][]) {
+    return twoArr.reduce((curr, el) => curr.concat(el), []);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 }
